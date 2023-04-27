@@ -1,0 +1,16 @@
+{
+  "name": "srs-webrtc",
+  "version": "1.0.0",
+  "main": "client.js",
+  "devDependencies": {
+    "esbuild": "^0.17.18",
+    "live-server": "^1.2.2"
+  },
+  "scripts": {
+    "start": "esbuild .\\srs_webrtc_connect.ts --bundle --outfile=client.js && live-server --port=888",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
