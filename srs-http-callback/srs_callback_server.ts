@@ -22,7 +22,7 @@ app.all("/api/v1/streams", (req, resp) => {
 
     const params = new URLSearchParams(req.body.param)
     const token: string = params.get("token") ?? "";
-    if(token === "aabbcc")
+    if(token === "correct_token")
         resp.status(200).send({"code": 0});
     else
         resp.sendStatus(403);

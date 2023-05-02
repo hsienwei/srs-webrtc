@@ -158,7 +158,6 @@ async function getSrsAnwser(offer: RTCSessionDescriptionInit, url: string ): Pro
         };
 
         console.log("Generated offer: ", offer);
-        //const url: string = "http://127.0.0.1:1985/api/v1/rtc/v1/publish/"
         console.log("apiUrl: ", conf.apiUrl);
         
         const xhr = new XMLHttpRequest();
@@ -176,9 +175,7 @@ async function getSrsAnwser(offer: RTCSessionDescriptionInit, url: string ): Pro
         );
     });
 
-    //return ""
 }
-//http://127.0.0.1:1985/api/v1/versions
 
 async function onConnect() {
     const pc = new RTCPeerConnection();
@@ -223,17 +220,13 @@ async function onConnect() {
     catch (e: any) {
         result.innerText = e.toString();
     }
-
-    
 }
 
 
-async function main ()
+function main()
 {
     (document.getElementById("connect") as HTMLButtonElement).onclick = onConnect;
 }
-
-
 
 main();
 

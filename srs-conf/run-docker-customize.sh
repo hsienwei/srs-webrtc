@@ -1,0 +1,1 @@
+sudo docker run --rm -it -p 1935:1935 -p 1985:1985 -p 8080:8080 -p 1990:1990 -p 8088:8088 -p 8000:8000/udp --env CANDIDATE=10.5.3.193 -v $PWD/customize:/srs_conf  registry.cn-hangzhou.aliyuncs.com/ossrs/srs:4 ./objs/srs -c /srs_conf/srs.conf
